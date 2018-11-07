@@ -62,7 +62,7 @@ collections:
       - {label: "Position type(full/part time)", name: "type", widget: "string"}
       - {label: "Weekly Hours", name: "hours", widget: "string"}
       - {label: "Location", name: "location", widget: "string"} 
-      - {label: "Description", name: "des", widget: "markdown"}
+      - {label: "Description", name: "desc", widget: "markdown"}
       - {label: "Knowledge Skills and Abilities", name: "knowledge", widget: "markdown", required: false}
-      - {label: "Minimum Job Requirements", name: "des", widget: "markdown", required: false}
-      - {label: "Duties & Responsibilities", name: "des", widget: "markdown", required: false} 
+      - {label: "Minimum Job Requirements", name: "requirements", widget: "markdown", required: false}
+      - {label: "Duties & Responsibilities", name: "duties", widget: "markdown", required: false} 
