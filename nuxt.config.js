@@ -49,7 +49,6 @@ module.exports = {
     routes: dynamicRoutes
   },
 
-
   /*
   ** Build configuration
   */

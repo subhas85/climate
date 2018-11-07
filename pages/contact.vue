@@ -9,7 +9,7 @@
     <section class="main-area">
     	<div class="container-fluid">
     		<div class="fixed-wrapper">
-	    		<section class="contact-ccl">
+	    		<section class="contact-ccl"> 
 	    			<h2>GENERAL CONTACT</h2>
 	    			<div class="row">
 		    			<div class="col-xs-12">
@@ -17,29 +17,17 @@
 							<p>climate@ccl-tt.com</p>
 		    			</div>
 	    			</div>
-	    			<div class="row">
+	    			<div class="row" v-for="office in offices" :key="office.map">
 		    			<div class="col-xs-12 col-sm-6">
-		    				<p>HEAD OFFICE</p>
-							<p>124 Eastern Main Road, </p>
-							<p>Port of Spain, Trinidad</p>
-							<p>Office: 1-868-624-COOL (2665)</p>
-							<p>Fax: 1-868-625-8207</p>
+		    				<p>{{office.title}}</p>
+							<p>{{office.address}}</p>
+							<p>{{office.address2}}</p>
+							<p>Office: {{office.office}}</p>
+							<p>Fax: {{office.fax}}</p>
 		    			</div>
 		    			<div class="col-xs-12 col-sm-6">
-		    				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.116661163356!2d-61.48568528520039!3d10.648044192408733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c36078eb2e110f1%3A0x9bb45961dcc9136e!2sClimate+Control+Limited!5e0!3m2!1sen!2sca!4v1454693683666" width="100%" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
+		    				<iframe :src="office.map" width="100%" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
 		    				
-		    			</div>
-	    			</div>
-	    			<div class="row">
-		    			<div class="col-xs-12 col-sm-6">
-		    				<p>BRANCH OFFICE</p>
-							<p>44-46 Milford Road, Canaan</p>
-							<p>Tobago</p>
-							<p>Office: 1-868-631-COOL (2665)</p>
-							<p>Fax: 1-868-631-0392</p>
-		    			</div>
-		    			<div class="col-xs-12 col-sm-6">
-		    				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.4236590822957!2d-60.813850285195876!3d11.156234792064486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c49b2330a64edc7%3A0x4d4c4c80b2e02f56!2sTobago+Technology+Centre%2C+Milford+Rd%2C+Canaan%2C+Trinidad+and+Tobago!5e0!3m2!1sen!2sca!4v1454754306076" width="100%" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
 		    			</div>
 	    			</div>
 	    		</section>
@@ -107,4 +95,20 @@
     	</div>
     </section>
     </div>
+
+	 
 </template>
+
+<script>
+export default {
+  data() {
+    // Using webpacks context to gather all files from a folder
+    const context = require.context("~/content/offices/", false, /\.json$/);
+    const offices = context.keys().map(key => ({
+      ...context(key),
+      _path: `/blog/${key.replace(".json", "").replace("./", "")}`
+    }));
+    return { offices };
+  }
+};
+</script>
