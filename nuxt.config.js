@@ -4,6 +4,8 @@ var path = require('path');
 // Enhance Nuxt's generate process by gathering all content files from Netifly CMS
 // automatically and match it to the path of your Nuxt routes.
 // The Nuxt routes are generate by Nuxt automatically based on the pages folder.
+
+
 var dynamicRoutes = getDynamicPaths({
   '/blog': 'blog/posts/*.json',
   '/blog2': 'blog2/posts/*.json'
@@ -14,17 +16,27 @@ module.exports = {
   /*
   ** Headers of the page
   */
-  head: {
-    title: 'climate',
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Nuxt.js + Netlify CMS project' }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
-  },
+ head: {
+  title: 'Climate Control Trinidad',
+  meta: [
+    { charset: 'utf-8' },
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { hid: 'description', name: 'description', content: 'Nuxt.js project' }
+  ],
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900' },
+    { rel: 'stylesheet', href: '/css/bootstrap.min.css' },
+    { rel: 'stylesheet', href: '/css/bootstrap-theme.css' },
+    { rel: 'stylesheet', href: '/css/font-awesome.min.css' },
+    { rel: 'stylesheet', href: '/css/select2.css' },
+    { rel: 'stylesheet', href: '/css/pages.css' },
+    { rel: 'stylesheet', href: '/css/styles.css' }
+  ],
+  script: [
+    { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
+  ]
+}, 
   /*
   ** Customize the progress bar color
   */
@@ -32,9 +44,12 @@ module.exports = {
   /*
   ** Route config for pre-rendering
   */
+ 
   generate: {
     routes: dynamicRoutes
   },
+
+
   /*
   ** Build configuration
   */

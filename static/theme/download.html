@@ -1,11 +1,28 @@
-<template>
-<div>
-<header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="favicon.ico">
+  <title>Climate Control Ltd</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/select2.css" rel="stylesheet">
+  <link href="css/pages.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+  <body>  
+  <header>
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <div class="logo">
-            <a href="/" title="Climate Control Ltd"><img class="img-responsive" src="images/logo.png" alt="Climate Control Ltd" title="Climate Control Ltd"></a>
+            <a href="index.html" title="Climate Control Ltd"><img class="img-responsive" src="images/logo.png" alt="Climate Control Ltd" title="Climate Control Ltd"></a>
           </div>
 
           <div class="menu">
@@ -14,7 +31,6 @@
             </a>
           </div>
         </div>
-        <!--
         <div class="col-xs-12 col-sm-6">
           <ul class="header-menu">
             <li>
@@ -32,7 +48,6 @@
             </li>
           </ul>
         </div>
-        -->
       </div>
     </div>
   </header>
@@ -53,15 +68,15 @@
         <div class="col-xs-12 col-sm-5 col-md-4">
           <ul class="menu-list">
             <li><a href="" title="">Home</a></li>
-            <!--<li><a href="" title="">Catalogue</a></li>-->
-            <!--<li><a href="" title="">Recent Projects</a></li>-->
-            <!--<li><a href="" title="">Rentals</a></li>-->
-            <!--<li><a href="" title="">Engineering</a></li>-->
-            <!--<li><a href="" title="">Support Downloads</a></li>-->
-            <li><a href="about" title="">About Us</a></li>
-            <li><a href="careers" title="">Careers</a></li>
-            <li><a href="contact" title="" class="active">Contact Us</a></li>
-            <!--<li><a href="faq" title="">FAQ</a></li>-->
+            <li><a href="" title="">Catalogue</a></li>
+            <li><a href="" title="">Recent Projects</a></li>
+            <li><a href="" title="">Rentals</a></li>
+            <li><a href="" title="">Engineering</a></li>
+            <li><a href="" title="">Support Downloads</a></li>
+            <li><a href="" title="">About Us</a></li>
+            <li><a href="" title="">Careers</a></li>
+            <li><a href="" title="" class="active">Contact Us</a></li>
+            <li><a href="" title="">FAQ</a></li>
           </ul>
         </div>
         <div class="col-xs-12 col-sm-7 col-md-8">
@@ -80,7 +95,115 @@
     </div>
   </nav>
   <main>
-  <nuxt/>
+    <section class="static-banner download-banner">
+	<div class="banner-text">
+		<h1>Downloads</h1>
+		<p>All product files associated with Climate <br/>Control LTD products</p>
+	</div>
+</section>
+    <section class="main-area">
+    	<div class="container-fluid">
+
+    		<div class="fixed-wrapper">
+    			<div class="download-tabs">
+    				<ul>
+    					<li>
+    						<a href="download.html" title="Search" class="active"><i class="fa fa-search"></i> Search</a>
+    					</li>
+    					<li>
+    						<a href="download-list.html" title="Search" ><i class="fa fa-list"></i></i> List</a>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+			<section class="search-view">
+				<form action="download-search.html">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="form-group form-group-default">
+								<label>Search by product name</label>
+								<input type="email" class="form-control" placeholder="Product Name">
+								
+							</div>
+							<div class="submit-btn">
+								<input type="submit" value="GO"><i class="fa fa-angle-right"></i>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="form-group form-group-default form-group-default-select2">
+								<label class="">Optional Filter 1</label>
+		                    	<select class="select2-offscreen" data-init-plugin="select2" tabindex="-1" title="">
+		                            <option value="AK">1</option>
+		                            <option value="HI">2</option>
+			                        <option value="AL">3</option>
+		                            <option value="AR">4</option>
+		                            <option value="WI">5</option>
+		                            <option value="CT">6</option>
+		                            <option value="DE">7</option>
+		                            <option value="FL">8</option>
+		                        </select>
+		                  	</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="form-group form-group-default form-group-default-select2">
+								<label class="">Optional Filter 2</label>
+		                    	<select class="select2-offscreen" data-init-plugin="select2" tabindex="-1" title="">
+		                            <option value="AK">1</option>
+		                            <option value="HI">2</option>
+			                        <option value="AL">3</option>
+		                            <option value="AR">4</option>
+		                            <option value="WI">5</option>
+		                            <option value="CT">6</option>
+		                            <option value="DE">7</option>
+		                            <option value="FL">8</option>
+		                        </select>
+		                  	</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-6 col-md-4">
+							<div class="form-group form-group-default form-group-default-select2">
+								<label class="">Optional Filter 3</label>
+		                    	<select class="select2-offscreen" data-init-plugin="select2" tabindex="-1" title="">
+		                            <option value="AK">1</option>
+		                            <option value="HI">2</option>
+			                        <option value="AL">3</option>
+		                            <option value="AR">4</option>
+		                            <option value="WI">5</option>
+		                            <option value="CT">6</option>
+		                            <option value="DE">7</option>
+		                            <option value="FL">8</option>
+		                        </select>
+		                  	</div>
+						</div>
+					</div>
+					
+					<div class="form-group checkboxes-group">
+						<label>Optional Filter Categories</label>
+						<div>
+							<div class="form-group checkbox">
+								<input type="checkbox" value="1" id="hvac">
+								<label for="hvac">HVAC</label>
+							</div>
+							<div class="form-group checkbox">
+								<input type="checkbox" value="1" id="commercial">
+								<label for="commercial">COMMERCIAL</label>
+							</div>
+							<div class="form-group checkbox">
+								<input type="checkbox" value="1" id="residential">
+								<label for="residential">RESIDENTIAL</label>
+							</div>
+						</div>
+						
+					</div>
+				</form>
+			</section>
+    		
+    	</div>
+    </section>
   </main>
   <footer>
 	<div class="container-fluid">
@@ -126,8 +249,8 @@
 							<h6>Stay Updated</h6>
 							<p>Be the first to find out about our special offers. You’ll also receive coupons from time to time.</p>
 							<form>
-								<input type="text" name="newsletter" placeholder="jane@email.com">
-								<input type="submit" value="Subscribe" name="subscribe">
+								<input type="text" name="newsletter" placeholder="jane@email.com"></input>
+								<input type="submit" value="Subscribe" name="subscribe"></input>
 							</form>
 						</div>
 					</div>
@@ -171,7 +294,7 @@
 		</div>
 	</div>
 </footer>
-<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+   <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
    <script type="text/javascript" src="js/modernizr.custom.js"></script>
    <script type="text/javascript" src="js/bootstrap.min.js"></script>
    <script type="text/javascript" src="js/jquery.bootstrap.wizard.min.js"></script>
@@ -179,9 +302,5 @@
    <script type="text/javascript" src="js/select2.min.js"></script>
    <script type="text/javascript" src="js/pages.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-</div>
-</template>
-
-<style>
-</style>
-
+</body>
+</html>
