@@ -40,13 +40,13 @@
     		<section class="vacancy">
     		<div class="fixed-wrapper">
     			<h2>current vacancies</h2>
-    			<div class="vacancy-list-item">
-    				<h3>OPERATIONS ADMINISTRATORS</h3>
+    			<div class="vacancy-list-item" v-for="post in postings" :key="post.title">
+    				<h3>{{post.title}}</h3>
     				<div class="desc">
     					<ul>
-    						<li class="date">Updated: 13/10/2015</li>
-    						<li>Permanent Full Time</li>
-    						<li><span>Weekly Hours: </span>35h</li>
+    						<li class="date">Updated: {{post.updated}}</li>
+    						<li>{{post.type}}</li>
+    						<li><span>Weekly Hours: </span>{{post.hours}}</li>
     						<li><span>Location: </span>TOBAGO AND POS</li>
     					</ul>
     				</div>
@@ -120,3 +120,18 @@
     </section>
     </div>
 </template>
+
+<script>
+export default {
+  data() {
+    // Using webpacks context to gather all files from a folder
+    const context = require.context("~/content/career/postings/", false, /\.json$/); 
+    const postings = context.keys().map(key => ({
+      ...context(key),
+      _path: `/blog/${key.replace(".json", "").replace("./", "")}`
+    })); 
+    return { postings };
+  }
+};
+</script>
+

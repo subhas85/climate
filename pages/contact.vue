@@ -35,59 +35,11 @@
 	    		<section class="direct-contact">
 	    			<h2>DIRECT CONTACT</h2>
 	    			<div class="row">
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>MARK LANKESTER<br/>
-							Chief Executive Officer<br/>
-							<span>1(868)-299-5900</span><br/>
-							mark-lankester@ccl-tt.com</p>
-		    			</div>
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>STEVE MOHAMMED<br/>
-							General Manager<br/>
-							<span>1(868)-682-7537</span><br/>
-							steve.mohammed@ccl-tt.com</p>
-		    			</div>
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>STACY-LYNN BICKRAM<br/>
-							Human Resource Manager<br/>
-							<span>1(868)-678-4465</span><br/>
-							hse@ccl-tt.com</p>
-		    			</div>
-
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>REZA RAHAMAN<br/>
-							HSSE/QC Manager<br/>
-							<span>1(868)-678-4465</span><br/>
-							hse@ccl-tt.com</p>
-		    			</div>
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>SUSAN JOSEPH<br/>
-							Executive Assistant<br/>
-							admin@ccl-tt.com</p>
-		    			</div>
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>DAVID SOOKRAM<br/>
-							Executive Assistant<br/>
-							admin@ccl-tt.com</p>
-		    			</div>
-
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>KEVIN SCOTT<br/>
-							Operations Team Lead<br/>
-							<span>1(868)-704-7652</span><br/>
-							kevin.scott@ccl-tt.com</p>
-		    			</div>
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>TENISHA LOWTHER<br/>
-							Finance Manager<br/>
-							<span>1(868)-790-1017</span><br/>
-							tenisha.lowther@ccl-tt.com</p>
-		    			</div>
-		    			<div class="col-xs-12 col-sm-4">
-		    				<p>CANDICE TAYLOR<br/>
-							Service Coordinator<br/>
-							<span>1(868)-687-2481</span><br/>
-							service@ccl-tt.com</p>
+		    			<div class="col-xs-12 col-sm-4" v-for="contact in contacts" :key="contact.name">
+		    				<p>{{contact.name}}<br/>
+							{{contact.position}}<br/>
+							<span>{{contact.phone}}</span><br/>
+							{{contact.email}}</p>
 		    			</div>
 	    			</div>
 	    		</section>
@@ -104,11 +56,16 @@ export default {
   data() {
     // Using webpacks context to gather all files from a folder
     const context = require.context("~/content/offices/", false, /\.json$/);
+	const context2 = require.context("~/content/contacts/", false, /\.json$/);
     const offices = context.keys().map(key => ({
       ...context(key),
       _path: `/blog/${key.replace(".json", "").replace("./", "")}`
     }));
-    return { offices };
+	const contacts = context2.keys().map(key => ({
+      ...context2(key),
+      _path: `/blog/${key.replace(".json", "").replace("./", "")}`
+    }));
+    return { offices,contacts };
   }
 };
 </script>
