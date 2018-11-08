@@ -55,15 +55,17 @@
     				</div>
     				<div class="details">
     					<h4>Knowledge Skills and Abilities:</h4>
-						{{post.knowledge}}
+						<vue-markdown>{{post.knowledge}}</vue-markdown>
     					<h4>Minimum Job Requirements:</h4>
-    					{{post.requirements}}
+    					<vue-markdown>{{post.requirements}}</vue-markdown>
     					<h4>Duties & Responsibilities:</h4>
-    					{{post.duties}}
+    					<vue-markdown>{{post.duties}}</vue-markdown>
     					<div class="vacany-footer">
-    						<div class="share">
+    						<!--
+							<div class="share">
 		    					<img src="images/job-share.jpg" title="Share" alt="Share">
 		    				</div>
+							-->
 		    				<div class="apply">
 		    					<a href="" title="Apply Now">Apply Now</a>
 		    				</div>
@@ -93,14 +95,23 @@
 </template>
 
 <script>
+
+import VueMarkdown from "vue-markdown";
 export default {
+  components: {
+    "vue-markdown": VueMarkdown
+  },
   data() {
     // Using webpacks context to gather all files from a folder
-    const context = require.context("~/content/career/postings/", false, /\.json$/); 
+    const context = require.context(
+      "~/content/career/postings/",
+      false,
+      /\.json$/
+    );
     const postings = context.keys().map(key => ({
       ...context(key),
       _path: `/blog/${key.replace(".json", "").replace("./", "")}`
-    })); 
+    }));
     return { postings };
   }
 };
