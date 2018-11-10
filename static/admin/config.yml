@@ -40,22 +40,6 @@ collections:
       - {label: "Phone", name: "phone", widget: "string"}
       - {label: "Email", name: "email", widget: "string"}
 
-  - name: "careers-contents" # Used in routes, e.g., /admin/collections/blog
-    label: "Careers - Postings" # Used in the UI
-    folder: "content/career/postings" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    format: 'json'
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Last Updated", name: "updated", widget: "date", format: "MMM Do YY"}
-      - {label: "Position type(full/part time)", name: "type", widget: "string"}
-      - {label: "Weekly Hours", name: "hours", widget: "string"}
-      - {label: "Location", name: "location", widget: "string"} 
-      - {label: "Description", name: "desc", widget: "markdown"}
-      - {label: "Knowledge Skills and Abilities", name: "knowledge", widget: "markdown", required: false}
-      - {label: "Minimum Job Requirements", name: "requirements", widget: "markdown", required: false}
-      - {label: "Duties & Responsibilities", name: "duties", widget: "markdown", required: false} 
   - name: "pages"
     label: "Pages"
     files:
@@ -64,12 +48,12 @@ collections:
         file: "content/about.yml"
         fields:
           - {label: "Top heading", name: top, widget: markdown}
-          - {label: "Left description", name: leftdesc, widget: markdown}
-          - {label: "Right description", name: rightdesc, widget: markdown}
+          - {label: "Left description", name: top-left-desc, widget: markdown}
+          - {label: "Right description", name: top-right-desc, widget: markdown}
 
           - {label: "A/C heading", name: top, widget: markdown}
-          - {label: "A/C Left description", name: leftdesc, widget: markdown}
-          - {label: "A/C Right description", name: rightdesc, widget: markdown}
+          - {label: "A/C Left description", name: ac-left-desc, widget: markdown}
+          - {label: "A/C Right description", name: ac-right-desc, widget: markdown}
 
           - {label: "Health and Safety Left description", name: health-left-desc, widget: markdown}
           - {label: "Health and Safety Right description", name: health-right-desc, widget: markdown}
@@ -79,26 +63,38 @@ collections:
             name: commerical
             widget: list
             fields:
-              - {label: "Title", name: title, widget: markdown}
+              - {label: "Title", name: title, widget: string}
           - label: "Service Directory - INDUSTRIAL"
             name: industrial
             widget: list
             fields:
-              - {label: "Title", name: title, widget: markdown}
+              - {label: "Title", name: title, widget: string}
           - label: "Service Directory - OTHER"
             name: other
             widget: list
             fields:
-              - {label: "Title", name: title, widget: markdown}              
+              - {label: "Title", name: title, widget: string}              
       - label: "Careers Page"
         name: "careerspage"
         file: "content/career.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
+          - {label: "Top Heading", name: heading, widget: markdown}
+          - {label: "Top Left", name: left-desc, widget: markdown}
+          - {label: "Top Right", name: right-desc, widget: markdown}
+
+          - {label: "CCL EMPLOYEE BENEFITS", name: benefits, widget: markdown}
+
+          - label: "Careers - Postings" # Used in the UI
+            name: "careers-contents" # Used in routes, e.g., /admin/collections/blog
             widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+            fields: # The fields for each document, usually in front matter
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Last Updated", name: "updated", widget: "date", format: "MMM Do YY"}
+              - {label: "Position type(full/part time)", name: "type", widget: "string"}
+              - {label: "Weekly Hours", name: "hours", widget: "string"}
+              - {label: "Location", name: "location", widget: "string"} 
+              - {label: "Description", name: "desc", widget: "markdown"}
+              - {label: "Knowledge Skills and Abilities", name: "knowledge", widget: "markdown", required: false}
+              - {label: "Minimum Job Requirements", name: "requirements", widget: "markdown", required: false}
+              - {label: "Duties & Responsibilities", name: "duties", widget: "markdown", required: false} 
