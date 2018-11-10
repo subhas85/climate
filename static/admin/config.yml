@@ -15,32 +15,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "office" # Used in routes, e.g., /admin/collections/blog
-    label: "Contact - Offices" # Used in the UI
-    folder: "content/offices" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{title}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    format: 'json'
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Address", name: "address", widget: "string"}
-      - {label: "Address2", name: "address2", widget: "string"}
-      - {label: "Office #", name: "office", widget: "string"}
-      - {label: "Fax #", name: "fax", widget: "string"}
-      - {label: "Map Url", name: "map", widget: "string"}
-
-  - name: "contact" # Used in routes, e.g., /admin/collections/blog
-    label: "Contact - Direct Contact" # Used in the UI
-    folder: "content/contacts" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{name}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    format: 'json'
-    fields: # The fields for each document, usually in front matter
-      - {label: "Name", name: "name", widget: "string"}
-      - {label: "Position", name: "position", widget: "string"}
-      - {label: "Phone", name: "phone", widget: "string"}
-      - {label: "Email", name: "email", widget: "string"}
-
+      
   - name: "pages"
     label: "Pages"
     files:
