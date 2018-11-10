@@ -35,7 +35,7 @@ collections:
           - {label: "Fax #", name: "fax", widget: "string"}
           - {label: "Map Url", name: "map", widget: "string"}
           
-          label: "Direct Contacts"
+        - label: "Direct Contacts"
           name: "direct-contact"
           widget: list
           fields: # The fields for each document, usually in front matter
@@ -71,7 +71,7 @@ collections:
             widget: list
             fields:
               - {label: "Title", name: title, widget: string}
-              
+
           - label: "Service Directory - OTHER"
             name: other
             widget: list
