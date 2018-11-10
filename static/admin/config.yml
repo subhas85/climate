@@ -56,31 +56,31 @@ collections:
       - {label: "Knowledge Skills and Abilities", name: "knowledge", widget: "markdown", required: false}
       - {label: "Minimum Job Requirements", name: "requirements", widget: "markdown", required: false}
       - {label: "Duties & Responsibilities", name: "duties", widget: "markdown", required: false} 
-      - label: "Pages"
-        name: "pages"
-        files:
-          - label: "Contact Page"
-            name: "contactpage"
-            file: "content/contact.yml"
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Contact Page"
+        name: "contactpage"
+        file: "content/contact.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Intro, name: intro, widget: markdown}
-              - label: Team
-                name: team
-                widget: list
-                fields:
-                  - {label: Name, name: name, widget: string}
-                  - {label: Position, name: position, widget: string}
-                  - {label: Photo, name: photo, widget: image}
-          - label: "Careers Page"
-            name: "careerspage"
-            file: "content/career.yml"
+              - {label: Name, name: name, widget: string}
+              - {label: Position, name: position, widget: string}
+              - {label: Photo, name: photo, widget: image}
+      - label: "Careers Page"
+        name: "careerspage"
+        file: "content/career.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Intro, name: intro, widget: markdown}
-              - label: Locations
-                name: locations
-                widget: list
-                fields:
-                  - {label: Name, name: name, widget: string}
-                  - {label: Address, name: address, widget: string}
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
