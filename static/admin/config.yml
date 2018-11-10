@@ -28,6 +28,7 @@ collections:
       - {label: "Office #", name: "office", widget: "string"}
       - {label: "Fax #", name: "fax", widget: "string"}
       - {label: "Map Url", name: "map", widget: "string"}
+
   - name: "contact" # Used in routes, e.g., /admin/collections/blog
     label: "Contact - Direct Contact" # Used in the UI
     folder: "content/contacts" # The path to the folder where the documents are stored
@@ -59,6 +60,14 @@ collections:
           - {label: "Office #", name: "office", widget: "string"}
           - {label: "Fax #", name: "fax", widget: "string"}
           - {label: "Map Url", name: "map", widget: "string"}
+          name: "direct-contact"
+          label: "Direct Contacts"
+          widget: list
+          fields: # The fields for each document, usually in front matter
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Position", name: "position", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
         
       - label: "About Page"
         name: "about"
