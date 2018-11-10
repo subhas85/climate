@@ -59,19 +59,37 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Contact Page"
-        name: "contactpage"
-        file: "content/contact.yml"
+      - label: "About Page"
+        name: "about"
+        file: "content/about.yml"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Team
-            name: team
+          - {label: "Top heading", name: top, widget: markdown}
+          - {label: "Left description", name: leftdesc, widget: markdown}
+          - {label: "Right description", name: rightdesc, widget: markdown}
+
+          - {label: "A/C heading", name: top, widget: markdown}
+          - {label: "A/C Left description", name: leftdesc, widget: markdown}
+          - {label: "A/C Right description", name: rightdesc, widget: markdown}
+
+          - {label: "Health and Safety Left description", name: health-left-desc, widget: markdown}
+          - {label: "Health and Safety Right description", name: health-right-desc, widget: markdown}
+
+          - {label: "Service Directory Heading", name: service-directory-heading, widget: markdown}
+          - label: "Service Directory - COMMERCIAL"
+            name: commerical
             widget: list
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Position, name: position, widget: string}
-              - {label: Photo, name: photo, widget: image}
+              - {label: "Title", name: title, widget: markdown}
+          - label: "Service Directory - INDUSTRIAL"
+            name: industrial
+            widget: list
+            fields:
+              - {label: "Title", name: title, widget: markdown}
+          - label: "Service Directory - OTHER"
+            name: other
+            widget: list
+            fields:
+              - {label: "Title", name: title, widget: markdown}              
       - label: "Careers Page"
         name: "careerspage"
         file: "content/career.yml"
