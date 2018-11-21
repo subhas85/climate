@@ -52,7 +52,7 @@ collections:
           - {label: "Left description", name: topLeftDesc, widget: markdown}
           - {label: "Right description", name: topRightDesc, widget: markdown}
 
-          - {label: "A/C heading", name: ac-top, widget: markdown}
+          - {label: "A/C heading", name: acTop, widget: markdown}
           - {label: "A/C Left description", name: acLeftDesc, widget: markdown}
           - {label: "A/C Right description", name: acRightDesc, widget: markdown}
 
