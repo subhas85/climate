@@ -23,6 +23,8 @@ ac-left-desc: >-
   conditioners.
 
 
+
+
   Air Scrubbers and Air Quality services are covered by our Bioclimatic Air
   Systems line of products.
 ac-right-desc: >-
@@ -39,16 +41,48 @@ ac-right-desc: >-
 
 
   Our main brands of Ventilation products are Xpelair and Greenheck.
-health-left-desc: aaaaa
-health-right-desc: bbb
-service-directory-heading: '**cccc**'
+health-left-desc: >-
+  Climate Control Limited is a provider of air conditioning systems that
+  utilizes a variety of skills, procedures and activities. CCL recognizes its
+  moral, social and legal responsibility to provide a safe, secure and healthy
+  work environment for employees, clients, contractors, suppliers, customers and
+  visitors.
+
+
+
+
+  CCL further recognizes that the development and implementation of an effective
+  HSE policy is critical to the achievement to its corporate Vision and Mission.
+  Executive management is committed to the pursuit of excellence in HSE
+  programs.”
+health-right-desc: >-
+  “Within our Company no activity shall be executed without addressing safety,
+  health and the impact on the environment of the job. Management believes that
+  accidents and injuries are preventable and our reputation and profitability
+  depend upon our ability to manage our operations safely and with no impact on
+  the health and well being of all who may be affectedby our commercial
+  activities.”
+service-directory-heading: |-
+  Climate Control Ltd. offers a large spectrum of commercial,
+
+  industrial, and many more products.
 commerical:
-  - title: first
-  - title: second
+  - title: Air Distribution and Balancing
+  - title: Air Quality Deep Bed Scrubbers
+  - title: Building Management and Energy Management Systems
+  - title: Duct Fabrication and Installation
+  - title: End User Training
 industrial:
-  - title: first
-  - title: fff
+  - title: Engineering Services
+  - title: Industrial and Explosion Proof Units
+  - title: Parts
+  - title: Project Management
+  - title: 'Remote Site System Monitoring and Early Warning Systems '
 other:
-  - title: fff
-  - title: uaaa
-  - title: coo
+  - title: Duct Cleaning
+  - title: Indoor Air Quality Audits
+  - title: Rentals
+  - title: Routine Preventative Maintenance Contracts
+  - title: 'System Design, Installation and Commissioning'
+  - title: Troubleshooting and Equipment Repair and Maintenance
+  - title: Ventilation / Exhaust Fans
