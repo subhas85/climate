@@ -3,11 +3,11 @@ top: >-
   equipment including LG VRF systems, York commercial & chill water systems,
   Gree light commercial and residential equipment & Coldwave residential air
   conditioners.
-top-left-desc: >-
+topLeftDesc: >-
   We continue to expand our range of project and facility management
   capabilities by partnering with established engineering, electrical and
   plumbing contractors.
-top-right-desc: >-
+topRightDesc: >-
   CCL provides clients with leading brands of equipment, internationally
   certified technical expertise, rapid response times and 24/7 emergency call
   out service.
@@ -17,7 +17,7 @@ top-right-desc: >-
 
   We are committed to our Health, Safety, and Environmental management systems.
   We are also a STOW Certified Company.
-ac-left-desc: >-
+acLeftDesc: >-
   Specialty air conditioning requirements for computer rooms &
   telecommunications equipment is covered by our line of Stulz precision air
   conditioners.
@@ -27,7 +27,7 @@ ac-left-desc: >-
 
   Air Scrubbers and Air Quality services are covered by our Bioclimatic Air
   Systems line of products.
-ac-right-desc: >-
+acRightDesc: >-
   Our versatile option in fabric air dispersion systems is commonly known as
   “fabric duct”, by DurkeeSox.
 
@@ -41,7 +41,7 @@ ac-right-desc: >-
 
 
   Our main brands of Ventilation products are Xpelair and Greenheck.
-health-left-desc: >-
+healthLeftDesc: >-
   Climate Control Limited is a provider of air conditioning systems that
   utilizes a variety of skills, procedures and activities. CCL recognizes its
   moral, social and legal responsibility to provide a safe, secure and healthy
@@ -55,34 +55,34 @@ health-left-desc: >-
   HSE policy is critical to the achievement to its corporate Vision and Mission.
   Executive management is committed to the pursuit of excellence in HSE
   programs.”
-health-right-desc: >-
+healthRightDesc: >-
   “Within our Company no activity shall be executed without addressing safety,
   health and the impact on the environment of the job. Management believes that
   accidents and injuries are preventable and our reputation and profitability
   depend upon our ability to manage our operations safely and with no impact on
   the health and well being of all who may be affectedby our commercial
   activities.”
-service-directory-heading: |-
+serviceDirectoryHeading: |-
   Climate Control Ltd. offers a large spectrum of commercial,
 
   industrial, and many more products.
 commerical:
-  - title: Air Distribution and Balancing
-  - title: Air Quality Deep Bed Scrubbers
-  - title: Building Management and Energy Management Systems
-  - title: Duct Fabrication and Installation
-  - title: End User Training
+  - commericalItem: Air Distribution and Balancing
+  - commericalItem: Air Quality Deep Bed Scrubbers
+  - commericalItem: Building Management and Energy Management Systems
+  - commericalItem: Duct Fabrication and Installation
+  - commericalItem: End User Training
 industrial:
-  - title: Engineering Services
-  - title: Industrial and Explosion Proof Units
-  - title: Parts
-  - title: Project Management
-  - title: 'Remote Site System Monitoring and Early Warning Systems '
+  - industrialItem: Engineering Services
+  - industrialItem: Industrial and Explosion Proof Units
+  - industrialItem: Parts
+  - industrialItem: Project Management
+  - industrialItem: 'Remote Site System Monitoring and Early Warning Systems '
 other:
-  - title: Duct Cleaning
-  - title: Indoor Air Quality Audits
-  - title: Rentals
-  - title: Routine Preventative Maintenance Contracts
-  - title: 'System Design, Installation and Commissioning'
-  - title: Troubleshooting and Equipment Repair and Maintenance
-  - title: Ventilation / Exhaust Fans
+  - otherItem: Duct Cleaning
+  - otherItem: Indoor Air Quality Audits
+  - otherItem: Rentals
+  - otherItem: Routine Preventative Maintenance Contracts
+  - otherItem: 'System Design, Installation and Commissioning'
+  - otherItem: Troubleshooting and Equipment Repair and Maintenance
+  - otherItem: Ventilation / Exhaust Fans

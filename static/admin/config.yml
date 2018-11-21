@@ -49,33 +49,33 @@ collections:
         file: "content/about.yml"
         fields:
           - {label: "Top heading", name: top, widget: markdown}
-          - {label: "Left description", name: top-left-desc, widget: markdown}
-          - {label: "Right description", name: top-right-desc, widget: markdown}
+          - {label: "Left description", name: topLeftDesc, widget: markdown}
+          - {label: "Right description", name: topRightDesc, widget: markdown}
 
           - {label: "A/C heading", name: ac-top, widget: markdown}
-          - {label: "A/C Left description", name: ac-left-desc, widget: markdown}
-          - {label: "A/C Right description", name: ac-right-desc, widget: markdown}
+          - {label: "A/C Left description", name: acLeftDesc, widget: markdown}
+          - {label: "A/C Right description", name: acRightDesc, widget: markdown}
 
-          - {label: "Health and Safety Left description", name: health-left-desc, widget: markdown}
-          - {label: "Health and Safety Right description", name: health-right-desc, widget: markdown}
+          - {label: "Health and Safety Left description", name: healthLeftDesc, widget: markdown}
+          - {label: "Health and Safety Right description", name: healthRightDesc, widget: markdown}
 
-          - {label: "Service Directory Heading", name: service-directory-heading, widget: markdown}
+          - {label: "Service Directory Heading", name: serviceDirectoryHeading, widget: markdown}
           - label: "Service Directory - COMMERCIAL"
             name: commerical
             widget: list
             fields:
-              - {label: "Commerical Item", name: commerical-title, widget: string}
+              - {label: "Commerical Item", name: commericalItem, widget: string}
           - label: "Service Directory - INDUSTRIAL"
             name: industrial
             widget: list
             fields:
-              - {label: "Industrial Item", name: industrial-title, widget: string}
+              - {label: "Industrial Item", name: industrialItem, widget: string}
 
           - label: "Service Directory - OTHER"
             name: other
             widget: list
             fields:
-              - {label: "Other Item", name: other-title, widget: string}
+              - {label: "Other Item", name: otherItem, widget: string}
 
       - label: "Careers Page"
         name: "careerspage"
