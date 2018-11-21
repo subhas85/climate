@@ -63,7 +63,13 @@ module.exports = {
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
+        },
+        {
+          enforce: 'pre',
+          test: /\.yml$/,
+          loader: ['json-loader','yaml-loader'],
+          exclude: /(node_modules)/
+        });
       }
     }
   }

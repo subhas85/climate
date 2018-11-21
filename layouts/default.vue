@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <div class="logo">
-            <a href="/" title="Climate Control Ltd"><img class="img-responsive" src="images/logo.png" alt="Climate Control Ltd" title="Climate Control Ltd"></a>
+            <a href="/" title="Climate Control Ltd"><img class="img-responsive" src="/images/logo.png" alt="Climate Control Ltd" title="Climate Control Ltd"></a>
           </div>
 
           <div class="menu">
@@ -41,7 +41,7 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="logo">
-            <img class="img-responsive" src="images/logo-nav.png" alt="Climate Control Ltd" title="Climate Control Ltd">
+            <img class="img-responsive" src="/images/logo-nav.png" alt="Climate Control Ltd" title="Climate Control Ltd">
           </div>
 
           <div class="menu">
@@ -151,12 +151,12 @@
 			<div class="col-sm-12 col-md-12 col-lg-9 footer-items">
 				<div class="comodo-seal">
 					<p>100%<br/> Secure<br/> Shopping</p>
-					<img src="images/comodo-footer.png" alt="Comodo Secure" title="Comodo Secure">
+					<img src="/images/comodo-footer.png" alt="Comodo Secure" title="Comodo Secure">
 				</div>
 
 				<div class="payment">
 					<p>Accepted payment methods</p>
-					<img src="images/footer-payment.png" alt="Accepted Payment Methods" title="Accepted Payment Methods">
+					<img src="/images/footer-payment.png" alt="Accepted Payment Methods" title="Accepted Payment Methods">
 				</div>
 
 				<div class="copyright">
@@ -171,14 +171,14 @@
 		</div>
 	</div>
 </footer>
-<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-   <script type="text/javascript" src="js/modernizr.custom.js"></script>
-   <script type="text/javascript" src="js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="js/jquery.bootstrap.wizard.min.js"></script>
-   <script type="text/javascript" src="js/classie.js"></script>
-   <script type="text/javascript" src="js/select2.min.js"></script>
-   <script type="text/javascript" src="js/pages.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="/js/jquery-2.2.0.min.js"></script>
+   <script type="text/javascript" src="/js/modernizr.custom.js"></script>
+   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="/js/jquery.bootstrap.wizard.min.js"></script>
+   <script type="text/javascript" src="/js/classie.js"></script>
+   <script type="text/javascript" src="/js/select2.min.js"></script>
+   <script type="text/javascript" src="/js/pages.min.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
 </div>
 </template>
 
