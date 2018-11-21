@@ -64,18 +64,19 @@ collections:
             name: commerical
             widget: list
             fields:
-              - {label: "Title", name: commerical-title, widget: string}
+              - {label: "Commerical Item", name: commerical-title, widget: string}
           - label: "Service Directory - INDUSTRIAL"
             name: industrial
             widget: list
             fields:
-              - {label: "Title", name: industrial-title, widget: string}
+              - {label: "Industrial Item", name: industrial-title, widget: string}
 
           - label: "Service Directory - OTHER"
             name: other
             widget: list
             fields:
-              - {label: "Title", name: other-title, widget: string}              
+              - {label: "Other Item", name: other-title, widget: string}
+
       - label: "Careers Page"
         name: "careerspage"
         file: "content/career.yml"
