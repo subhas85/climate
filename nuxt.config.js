@@ -66,8 +66,8 @@ module.exports = {
         },
         {
           enforce: 'pre',
-          test: /\.yml$/,
-          loader: ['json-loader','yaml-loader'],
+          test: /\.yaml$/,
+          loader: ['js-yaml-loader'],
           exclude: /(node_modules)/
         });
       }

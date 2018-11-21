@@ -5,10 +5,9 @@
 			<h1>Careers</h1>
 		</div>
     </section>
-
-<vue-markdown v-for="p in page" :key="p.top"> {{p.top}} </vue-markdown>
+ 
 <vue-markdown v-for="q in postings" :key="q.hours">{{postings[0].title}}</vue-markdown>
-{{page[0].top}} // {{postings[0].title}}
+ //EMAIL: {{about.email}} {{postings[0].title}}
     <section class="main-area">
     	<div class="container-fluid">
 
@@ -98,7 +97,7 @@
 </template>
 
 <script>
-import VueMarkdown from "vue-markdown";
+import VueMarkdown from "vue-markdown"; 
 
 export default {
   components: {
@@ -112,18 +111,19 @@ export default {
       /\.json$/
     );
 
-	const pages = require.context("~/content/", false, /\.yml$/);
+	//const pages = require.context("~/content/", false, /\.yml$/);
 	
     const postings = context.keys().map(key => ({
       ...context(key),
       _path: `/blog/${key.replace(".json", "").replace("./", "")}`
 	}));
- 	
+	 
+	 /*
 	const page = pages.keys().map(key => ({
       ...pages(key),
       _path: `/${key.replace(".yml", "").replace("./", "")}`
     }));
- 
+ */
 /*
 fs.readFileSync('~/content/about.yml', function (err, data) {
   if (err) {
@@ -133,9 +133,10 @@ fs.readFileSync('~/content/about.yml', function (err, data) {
 });
 */
 
-var about = require("~/content/about.yml");
+var about = require("js-yaml-loader!~/content/contact.yml");
+ 
 
-    return { postings,about, page};
+    return { postings, about};
   }
 };
 </script>
