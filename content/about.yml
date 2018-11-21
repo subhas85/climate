@@ -1,26 +1,44 @@
-top: |-
-  **asdfasf**
-
-  # **WOHH **
-
-
-
-  ```
-  ASDFASDFASDFTHIS IS COOL CODE
-  ```
-
-  1. ASDFASDF
-  2. SECOND ITEM
-  3. THIRD 
-  4. FORTH
+top: >-
+  **Climate Control** sells and services leading brands of air conditioning
+  equipment including LG VRF systems, York commercial & chill water systems,
+  Gree light commercial and residential equipment & Coldwave residential air
+  conditioners.
+top-left-desc: >-
+  We continue to expand our range of project and facility management
+  capabilities by partnering with established engineering, electrical and
+  plumbing contractors.
+top-right-desc: >-
+  CCL provides clients with leading brands of equipment, internationally
+  certified technical expertise, rapid response times and 24/7 emergency call
+  out service.
 
 
 
-  YO YEEEE
-top-left-desc: WTF
-top-right-desc: MA
-ac-left-desc: ASDFASDF
-ac-right-desc: FFF
+
+  We are committed to our Health, Safety, and Environmental management systems.
+  We are also a STOW Certified Company.
+ac-left-desc: >-
+  Specialty air conditioning requirements for computer rooms &
+  telecommunications equipment is covered by our line of Stulz precision air
+  conditioners.
+
+
+  Air Scrubbers and Air Quality services are covered by our Bioclimatic Air
+  Systems line of products.
+ac-right-desc: >-
+  Our versatile option in fabric air dispersion systems is commonly known as
+  “fabric duct”, by DurkeeSox.
+
+
+
+
+  Explosion Proof and Industrial Units sold by us are manufactured by Specific
+  Systems.
+
+
+
+
+  Our main brands of Ventilation products are Xpelair and Greenheck.
 health-left-desc: sdfsdfAS
 health-right-desc: sdfsdf
 service-directory-heading: '**dfdf**'
