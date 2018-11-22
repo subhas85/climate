@@ -83,14 +83,14 @@ collections:
         file: "content/career.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: "Top Heading", name: heading, widget: markdown}
-          - {label: "Top Left", name: left-desc, widget: markdown}
-          - {label: "Top Right", name: right-desc, widget: markdown}
+          - {label: "Top Heading", name: top, widget: markdown}
+          - {label: "Top Left", name: topLeft, widget: markdown}
+          - {label: "Top Right", name: topRight, widget: markdown}
 
           - {label: "CCL EMPLOYEE BENEFITS", name: benefits, widget: markdown}
 
           - label: "Careers - Postings" # Used in the UI
-            name: "careers-contents" # Used in routes, e.g., /admin/collections/blog
+            name: "postings" # Used in routes, e.g., /admin/collections/blog
             widget: list
             fields: # The fields for each document, usually in front matter
               - {label: "Title", name: "title", widget: "string"}
