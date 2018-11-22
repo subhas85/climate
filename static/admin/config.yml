@@ -60,6 +60,10 @@ collections:
           - {label: "Health and Safety Right description", name: healthRightDesc, widget: markdown}
 
           - {label: "Service Directory Heading", name: serviceDirectoryHeading, widget: markdown}
+
+          - label: "TESTService Directory - COMMERCIAL"
+            name: commerical2
+            widget: list
           - label: "Service Directory - COMMERCIAL"
             name: commerical
             widget: list
