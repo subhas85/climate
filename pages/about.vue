@@ -12,10 +12,8 @@
 						<p v-html="getHTML(about.top)"></p>
 						
 		    			<div class="row">
-			    			<div class="col-xs-12 col-sm-6" v-html="getHTML(about.topLeftDesc)">
-			    			</div>
-			    			<div class="col-xs-12 col-sm-6" v-html="getHTML(about.topRightDesc)">
-			    			</div>
+			    			<div class="col-xs-12 col-sm-6" v-html="getHTML(about.topLeftDesc)"></div>
+			    			<div class="col-xs-12 col-sm-6" v-html="getHTML(about.topRightDesc)"></div>
 		    			</div>
 		    		</section>
 	    		</div>
@@ -67,11 +65,11 @@
 </section>
 
     		<section class="air-condition">
-    			<div class="banner-section" style="background-image:url('images/air-banner.jpg')"></div>
+    			<div class="banner-section" style="background-image:url('/images/air-banner.jpg')"></div>
     			<div class="fixed-wrapper">
     				<div class="container-fluid">
 		    			<h2>Air-Conditioning</h2>
-						<p class="big" v-html="getHTML(about.acTop)"></p>
+						<div class="big" v-html="getHTML(about.acTop)"></div>
 						<p class="big1">We also provide HVAC accessories for industrial, commercial and residential applications.</p>
 		    			<div class="row">
 			    			<div class="col-xs-12">
@@ -90,10 +88,10 @@
 			    					<img src="/images/content-logo4.jpg" class="img-responsive" title="Stulz">
 			    				</div>
 			    				<div class="logos logo5">
-			    					<img src="images/content-logo5.jpg" class="img-responsive" title="Specific Systems">
+			    					<img src="/images/content-logo5.jpg" class="img-responsive" title="Specific Systems">
 			    				</div>
 			    				<div class="logos logo6">
-			    					<img src="images/content-logo6.jpg" class="img-responsive" title="Bioclimate Air Systems">
+			    					<img src="/images/content-logo6.jpg" class="img-responsive" title="Bioclimate Air Systems">
 			    				</div>
 			    				
 			    			</div>
@@ -118,7 +116,7 @@
 			<div class="row">
 				<div class="col-xs-12 col-sm-6" v-html="getHTML(about.healthLeftDesc)"></div>
 				<div class="col-xs-12 col-sm-6">
-					<p v-html="getHTML(about.healthRightDesc)"></p>
+					<div v-html="getHTML(about.healthRightDesc)"></div>
 					<p class="stow-logo"><strong>CCL is STOW Certified</strong><img src="images/content-logo7.jpg" class="img-responsive" title="LG"></p>
 				</div>
 			</div>

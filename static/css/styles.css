@@ -1979,7 +1979,7 @@ footer .payment img {
   width: 100px;
   margin: 30px auto 0;
 }
-.about-main > p {
+.about-main > p > p, .about-main > p {
   color: #3883eb;
   font-size: 19px;
   letter-spacing: 0.75px;

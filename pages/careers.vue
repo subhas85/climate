@@ -10,8 +10,8 @@
 
     		<div class="fixed-wrapper">
 	    		<section class="about-ccl">
-						<h2>{{career.title}}</h2>
-						<p v-html="getHTML(career.top)"></p>
+					<h2>{{career.title}}</h2>
+					<p v-html="getHTML(career.top)"></p>
 	    			
 	    			<div class="row">
 		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topLeft)"></div>
