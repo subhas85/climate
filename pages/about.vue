@@ -41,7 +41,7 @@
 </section>
 
 <section class="location">
-	<div class="banner-section" style="background-image:url('images/location-banner.jpg')"></div>
+	<div class="banner-section" style="background-image:url('/images/location-banner.jpg')"></div>
 	<!--<figure>
 		<img src="" alt="Location" title="Location" class="img-responsive">
 	</figure>-->
@@ -105,7 +105,7 @@
     		</section>
 
     		<section class="health-safety">
-	<div class="banner-section" style="background-image:url('images/health-banner.jpg')"></div>
+	<div class="banner-section" style="background-image:url('/images/health-banner.jpg')"></div>
 	<!--<figure>
 		<img src="images/health-banner.jpg" alt="Health and Safety" title="Health and Safety" class="img-responsive">
 	</figure>-->
@@ -117,7 +117,7 @@
 				<div class="col-xs-12 col-sm-6" v-html="getHTML(about.healthLeftDesc)"></div>
 				<div class="col-xs-12 col-sm-6">
 					<div v-html="getHTML(about.healthRightDesc)"></div>
-					<p class="stow-logo"><strong>CCL is STOW Certified</strong><img src="images/content-logo7.jpg" class="img-responsive" title="LG"></p>
+					<p class="stow-logo"><strong>CCL is STOW Certified</strong><img src="/images/content-logo7.jpg" class="img-responsive" title="LG"></p>
 				</div>
 			</div>
 		</div>
@@ -126,7 +126,7 @@
     		
 	    	
 	    	<section class="service-directory">
-	<div class="banner-section" style="background-image:url('images/directory-banner.jpg')"></div>
+	<div class="banner-section" style="background-image:url('/images/directory-banner.jpg')"></div>
 	<!--<figure>
 		<img src="images/directory-banner.jpg" alt="Service Directory" title="Service Directory" class="img-responsive">
 	</figure>-->
