@@ -20,14 +20,13 @@
 	    			<div class="row" v-for="office in contact.offices" :key="office.map">
 		    			<div class="col-xs-12 col-sm-6">
 		    				<p>{{office.title}}</p>
-							<p>{{office.address}}</p>
-							<p>{{office.address2}}</p>
-							<p>Office: {{office.office}}</p>
-							<p>Fax: {{office.fax}}</p>
+								<p>{{office.address}}</p>
+								<p>{{office.address2}}</p>
+								<p>Office: {{office.office}}</p>
+								<p>Fax: {{office.fax}}</p>
 		    			</div>
 		    			<div class="col-xs-12 col-sm-6">
 		    				<iframe :src="office.map" width="100%" height="180" frameborder="0" style="border:0" allowfullscreen></iframe>
-		    				
 		    			</div>
 	    			</div>
 	    		</section>
