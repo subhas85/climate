@@ -68,29 +68,24 @@ healthRightDesc: >-
   the health and well being of all who may be affectedby our commercial
   activities.”
 serviceDirectoryHeading: |-
-  Climate Control Ltd. offers a large spectrum of commercial,
-
-  industrial, and many more products.
-commerical2:
-  - undefined: first
-  - undefined: second
+  Climate Control Ltd. offers a large spectrum of commercial, industrial, and many more products.
 commerical:
-  - commericalItem: Air Distribution and Balancing
-  - commericalItem: Air Quality Deep Bed Scrubbers
-  - commericalItem: Building Management and Energy Management Systems
-  - commericalItem: Duct Fabrication and Installation
-  - commericalItem: End User Training
+  - item: Air Distribution and Balancing
+  - item: Air Quality Deep Bed Scrubbers
+  - item: Building Management and Energy Management Systems
+  - item: Duct Fabrication and Installation
+  - item: End User Training
 industrial:
-  - industrialItem: Engineering Services
-  - industrialItem: Industrial and Explosion Proof Units
-  - industrialItem: Parts
-  - industrialItem: Project Management
-  - industrialItem: 'Remote Site System Monitoring and Early Warning Systems '
+  - item: Engineering Services
+  - item: Industrial and Explosion Proof Units
+  - item: Parts
+  - item: Project Management
+  - item: 'Remote Site System Monitoring and Early Warning Systems '
 other:
-  - otherItem: Duct Cleaning
-  - otherItem: Indoor Air Quality Audits
-  - otherItem: Rentals
-  - otherItem: Routine Preventative Maintenance Contracts
-  - otherItem: 'System Design, Installation and Commissioning'
-  - otherItem: Troubleshooting and Equipment Repair and Maintenance
-  - otherItem: Ventilation / Exhaust Fans
+  - item: Duct Cleaning
+  - item: Indoor Air Quality Audits
+  - item: Rentals
+  - item: Routine Preventative Maintenance Contracts
+  - item: 'System Design, Installation and Commissioning'
+  - item: Troubleshooting and Equipment Repair and Maintenance
+  - item: Ventilation / Exhaust Fans

@@ -61,27 +61,22 @@ collections:
 
           - {label: "Service Directory Heading", name: serviceDirectoryHeading, widget: markdown}
 
-          - label: "TESTService Directory - COMMERCIAL"
-            name: commerical2
-            widget: list
-            fields:
-              - {label: "Item", widget: string}
           - label: "Service Directory - COMMERCIAL"
             name: commerical
             widget: list
             fields:
-              - {label: "Commerical Item", name: commericalItem, widget: string}
+              - {label: "Commerical Item", name: item, widget: string}
           - label: "Service Directory - INDUSTRIAL"
             name: industrial
             widget: list
             fields:
-              - {label: "Industrial Item", name: industrialItem, widget: string}
+              - {label: "Industrial Item", name: item, widget: string}
 
           - label: "Service Directory - OTHER"
             name: other
             widget: list
             fields:
-              - {label: "Other Item", name: otherItem, widget: string}
+              - {label: "Other Item", name: item, widget: string}
 
       - label: "Careers Page"
         name: "careerspage"
