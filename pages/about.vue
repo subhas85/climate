@@ -10,34 +10,14 @@
     				<section class="about-main">
 	    				<h2>Incorporated since 1966</h2> 
 						<p v-html="getHTML(about.top)"></p>
-						
+						<br/>
 		    			<div class="row">
 			    			<div class="col-xs-12 col-sm-6" v-html="getHTML(about.topLeftDesc)"></div>
 			    			<div class="col-xs-12 col-sm-6" v-html="getHTML(about.topRightDesc)"></div>
 		    			</div>
 		    		</section>
 	    		</div>
-    		</div>
-
-    		<!-- <section class="location">
-	<figure>
-		<img src="images/location-banner.jpg" alt="Location" title="Location" class="img-responsive">
-	</figure>
-	<div class="fixed-wrapper">
-		<div class="container-fluid">
-			<h2>Our Locations</h2>
-			<div class="row">
-    			<div class="col-xs-12 col-sm-6">
-    				<p>HEAD OFFICE <br/><br/>124 Eastern Main Road,<br/> Port of Spain, Trinidad<br/> Tel: 624-2665 </p>
-    				<img src="images/head-office.jpg" alt="Head Office" title="Head Office" class="img-responsive">
-    			</div>
-    			<div class="col-xs-12 col-sm-6">
-    				<p>BRANCH OFFICE <br/><br/>44-46 Milford Road<br/> Canaan, Tobago<br/> Tel 631-2665</p>
-    				<img src="images/branch-office.jpg" alt="Branch Office" title="Branch Office" class="img-responsive">
-    			</div>
-			</div>
-		</div>
-	</div> -->
+    		</div>    		
 </section>
 
 <section class="location">

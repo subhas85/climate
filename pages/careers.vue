@@ -12,7 +12,7 @@
 	    		<section class="about-ccl">
 					<h2>{{career.title}}</h2>
 					<p v-html="getHTML(career.top)"></p>
-	    			
+	    			<br/>
 	    			<div class="row">
 		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topLeft)"></div>
 		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topRight)"></div>
