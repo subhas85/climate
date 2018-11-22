@@ -71,6 +71,9 @@ serviceDirectoryHeading: |-
   Climate Control Ltd. offers a large spectrum of commercial,
 
   industrial, and many more products.
+commerical2:
+  - undefined: first
+  - undefined: second
 commerical:
   - commericalItem: Air Distribution and Balancing
   - commericalItem: Air Quality Deep Bed Scrubbers
