@@ -5,44 +5,32 @@
 			<h1>Careers</h1>
 		</div>
     </section>
- 
-<vue-markdown v-for="q in postings" :key="q.hours">{{postings[0].title}}</vue-markdown>
- //EMAIL: {{about.email}} {{postings[0].title}}
     <section class="main-area">
     	<div class="container-fluid">
 
     		<div class="fixed-wrapper">
 	    		<section class="about-ccl">
-	    			<h2>About Climate Control LTD.</h2>
-	    			<p><strong>Climate Control Limited (CCL)</strong> was established in 1966. Traditionally, the company has been an air conditioning firm, representing major A/C international brands. The company’s range of services include equipment sales and rentals, parts and installations with the relative service and preventative maintenance. </p>
+						<h2>{{career.title}}</h2>
+						<p v-html="getHTML(career.top)"></p>
+	    			
 	    			<div class="row">
-		    			<div class="col-xs-12 col-sm-6">
-		    				<p>Over its many years of operations Climate Control has been a major provider of trained personnel to the air conditioning industry in the country. The present staff at Climate Control Limited is no exception. There are over 100 years of combined expertise among the technical personnel at the company, which is applied to everyday routine business as well as special applications such as Natural Gas Cooling. </p>
+		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topLeft)">
 		    			</div>
-		    			<div class="col-xs-12 col-sm-6">
-		    				<p>The senior management of the company has many years’ experience in the management, contracting and service industry as well as a wealth of knowledge of other varied industries and applications. This provides the where-with-all to derive the best solutions to common as well as uncommon engineering problems.</p>
+		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topRight)">
 		    			</div>
 	    			</div>
 	    		</section>
 
 	    		<section class="employee-benifits">
 	    			<h2>CCL EMPLOYEE BENEFITS</h2>
-	    			<ul>
-	    				<li>A competitive total compensation package</li>
-						<li>A comprehensive benefits and retirement savings program</li>
-						<li>Continuous in house technical assessments in both practical HVAC applications and theory</li>
-						<li>Local and international training opportunities</li>
-						<li>Opportunities to work at any of our branches in Port-of-Spain or Tobago</li>
-						<li>Internal coaching programs lead by some of the country’s most skilled ‘A’ Class technicians</li>
-						<li>A team environment that provides an enriching and engaging work experience</li>
-	    			</ul>
+	    			<div v-html="getHTML(career.benefits)"></div>
 	    		</section>
 	    	</div>
 	    	
     		<section class="vacancy">
     		<div class="fixed-wrapper">
     			<h2>current vacancies</h2>
-    			<div class="vacancy-list-item" v-for="post in postings" :key="post.title">
+    			<div class="vacancy-list-item" v-for="(post,index) in career.postings" :key="post.title">
     				<h3>{{post.title}}</h3>
     				<div class="desc">
     					<ul>
@@ -52,16 +40,17 @@
     						<li><span>Location: </span>{{post.location}}</li>
     					</ul>
     				</div>
-    				<div class="teaser">
-    					<p>{{post.desc}}</p>
-    				</div>
-    				<div class="details">
+    				<div class="teaser" v-html="getHTML(post.desc)"></div>
+    				<div class="details" v-show="currentPosting == index || career.postings.length === 1">
     					<h4>Knowledge Skills and Abilities:</h4>
-						<vue-markdown>{{post.knowledge}}</vue-markdown>
+							<p v-html="getHTML(post.knowledge)"></p>
+
     					<h4>Minimum Job Requirements:</h4>
-    					<vue-markdown>{{post.requirements}}</vue-markdown>
+							<p v-html="getHTML(post.requirements)"></p>
+
     					<h4>Duties & Responsibilities:</h4>
-    					<vue-markdown>{{post.duties}}</vue-markdown>
+							<p v-html="getHTML(post.duties)"></p>
+
     					<div class="vacany-footer">
     						<!--
 							<div class="share">
@@ -75,13 +64,13 @@
     					
     				</div>
     				
-    				<div class="shadow-bottom">
-    					<div class="show-hide">
-	    					<a href="javascript:void(0);" class="show-job">
+    				<div class="shadow-bottom" v-show="career.postings.length > 1">
+    					<div class="show-hide" >
+	    					<a href="javascript:void(0);" class="show-job" v-on:click="currentPosting = index" v-show="currentPosting != index">
 	    						READ MORE
 	    						<i class="fa fa-angle-down"></i>
 	    					</a>
-	    					<a href="javascript:void(0);" class="hide-job">
+	    					<a href="javascript:void(0);" class="hide-job" v-show="currentPosting == index" v-on:click="currentPosting = -1">
 	    						<i class="fa fa-angle-up"></i>
 	    						SHOW LESS
 	    					</a>
@@ -97,46 +86,17 @@
 </template>
 
 <script>
-import VueMarkdown from "vue-markdown"; 
-
 export default {
-  components: {
-    "vue-markdown": VueMarkdown
-  },
   data() {
-    // Using webpacks context to gather all files from a folder
-    const context = require.context(
-      "~/content/career/postings/",
-      false,
-      /\.json$/
-    );
-
-	//const pages = require.context("~/content/", false, /\.yml$/);
-	
-    const postings = context.keys().map(key => ({
-      ...context(key),
-      _path: `/blog/${key.replace(".json", "").replace("./", "")}`
-	}));
-	 
-	 /*
-	const page = pages.keys().map(key => ({
-      ...pages(key),
-      _path: `/${key.replace(".yml", "").replace("./", "")}`
-    }));
- */
-/*
-fs.readFileSync('~/content/about.yml', function (err, data) {
-  if (err) {
-    throw err; 
-  }
-  console.log(data.toString());
-});
-*/
-
-var about = require("js-yaml-loader!~/content/contact.yml");
- 
-
-    return { postings, about};
+    var career = require("js-yaml-loader!~/content/career.yml");
+    return { currentPosting: 0, career };
+  },
+  methods: {
+    getHTML: function(code) {
+      var showdown = require("showdown");
+      var converter = new showdown.Converter();
+      return converter.makeHtml(code);
+    }
   }
 };
 </script>

@@ -62,7 +62,7 @@ $(document).ready(function(){
 		}
 	}*/
 	
-
+/* being worked on by Vuejs
 	$('.show-hide a.show-job').on('click',function(){
 		$(this).parents('.vacancy-list-item').find('.details').slideDown();
 		$(this).parents('.vacancy-list-item').addClass('active');
@@ -81,7 +81,7 @@ $(document).ready(function(){
 	if($('.vacancy-list-item').length == 1 ) {
 		$('.show-hide a.show-job').trigger('click');
 	}
-
+*/
 	$('.product-switcher li a').on('click',function(){
 		$('.product-switcher li a').removeClass('active');
 		var imgSrc = $(this).attr('data-image');

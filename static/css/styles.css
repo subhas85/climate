@@ -2346,7 +2346,7 @@ footer .payment img {
   width: 100px;
   margin: 30px auto 0;
 }
-.about-ccl > p {
+.about-ccl > p > p, .about-ccl > p {
   color: #3883eb;
   font-size: 19px;
   letter-spacing: 0.75px;
@@ -2509,7 +2509,7 @@ footer .payment img {
   right: 25px;
 }
 .vacancy .details {
-  display: none;
+  /* display: none; managed by vue now */
   padding-bottom: 65px;
 }
 .vacancy .details li {
@@ -2578,8 +2578,7 @@ footer .payment img {
   display: block;
   font-size: 20px;
 }
-.vacancy .show-hide a.hide-job {
-  display: none;
+.vacancy .show-hide a.hide-job { 
   visibility: inherit;
 }
 
