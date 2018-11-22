@@ -1,5 +1,5 @@
 email: climate@ccl-tt.com
-office:
+offices:
   - address: '44-46 Milford Road, Canaan'
     address2: Tobago
     fax: 1-868-631-0392
@@ -8,13 +8,13 @@ office:
     office: 1-868-631-COOL (2665)
     title: BRANCH OFFICE
   - address: 124 Eastern Main Road
-    address2: 'Port of Spain, Trinidad'
+    address2: Port of Spain, Trinidad
     fax: 1-868-625-8207
     map: >-
       https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3921.116661163356!2d-61.48568528463502!3d10.648044192408712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c36078eb2e110f1%3A0x9bb45961dcc9136e!2sClimate+Control+Limited!5e0!3m2!1sen!2sca!4v1541561461194
     office: 1-868-624-COOL (2665)
     title: HEAD OFFICE
-direct-contact:
+contacts:
   - email: steve.mohammed@ccl-tt.com
     name: STEVE MOHAMMED
     phone: 1(868)-682-7537
