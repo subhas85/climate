@@ -8,15 +8,15 @@
     		<div class="fixed-wrapper">
     			<div class="container-fluid">
     				<section class="about-main">
-    			
-	    				<h2>Incorporated since 1966</h2>
-	    				<p><strong>Climate Control Ltd.</strong> is a leader in the commercial, industrial and residential HVAC industry; providing innovative solutions for our clients cooling, ventilation and air quality needs for over 50 years.</p>
+	    				<h2>Incorporated since 1966</h2> 
+						<p v-html="getHTML(about.top)"></p>
+						
 		    			<div class="row">
 			    			<div class="col-xs-12 col-sm-6">
-			    				<p>We continue to expand our range of project and facility management capabilities by partnering with established engineering, electrical and plumbing contractors.</p>
+								<p v-html="getHTML(about.topLeftDesc)"></p>
 			    			</div>
 			    			<div class="col-xs-12 col-sm-6">
-								<p>CCL provides clients with leading brands of equipment, internationally certified technical expertise, rapid response times and 24/7 emergency call out service. </p><p> We are committed to our Health, Safety, and Environmental management systems. We are also a STOW Certified Company. </p>
+								<p v-html="getHTML(about.topRightDesc)"></p>
 			    			</div>
 		    			</div>
 		    		</section>
@@ -86,23 +86,23 @@
     			<div class="fixed-wrapper">
     				<div class="container-fluid">
 		    			<h2>Air-Conditioning</h2>
-		    			<p class="big"><strong>Climate Control</strong> sells and services leading brands of air conditioning equipment including LG VRF systems, York commercial & chill water systems, Gree light commercial and residential equipment & Coldwave residential air conditioners.</p>
+						<p class="big" v-html="getHTML(about.acTop)"></p>
 						<p class="big1">We also provide HVAC accessories for industrial, commercial and residential applications.</p>
 		    			<div class="row">
 			    			<div class="col-xs-12">
 			    				<div class="logos logo1">
-			    					<img src="images/content-logo1.jpg" class="img-responsive" title="LG">
+			    					<img src="/images/content-logo1.jpg" class="img-responsive" title="LG">
 			    					<p>We were one of the first to provide VRF Systems to the local market.</p>
 			    				</div>
 			    				<div class="logos logo2">
-			    					<img src="images/content-logo2.jpg" class="img-responsive" title="York">
+			    					<img src="/images/content-logo2.jpg" class="img-responsive" title="York">
 			    					<p>For over 15 years we have been proudly providing York Commercial equipments and Chill water systems.</p>
 			    				</div>
 			    				<div class="logos logo3">
-			    					<img src="images/content-logo3.jpg" class="img-responsive" title="Durkee Sox">
+			    					<img src="/images/content-logo3.jpg" class="img-responsive" title="Durkee Sox">
 			    				</div>
 			    				<div class="logos logo4">
-			    					<img src="images/content-logo4.jpg" class="img-responsive" title="Stulz">
+			    					<img src="/images/content-logo4.jpg" class="img-responsive" title="Stulz">
 			    				</div>
 			    				<div class="logos logo5">
 			    					<img src="images/content-logo5.jpg" class="img-responsive" title="Specific Systems">
@@ -114,15 +114,8 @@
 			    			</div>
 		    			</div>
 		    			<div class="row">
-		    				<div class="col-xs-12 col-sm-6">
-		    					<p>Specialty air conditioning requirements for computer rooms & telecommunications equipment is covered by our line of <strong>Stulz</strong> precision air conditioners.</p>
-								<p>Air Scrubbers and Air Quality services are covered by our <strong>Bioclimatic Air Systems</strong> line of products.</p>
-		    				</div>
-		    				<div class="col-xs-12 col-sm-6">
-		    					<p>Our versatile option in fabric air dispersion systems is commonly known as “fabric duct”, by <strong>DurkeeSox</strong>.</p>
-								<p>Explosion Proof and Industrial Units sold by us are manufactured by <strong>Specific Systems</strong>.</p>
-								<p>Our main brands of Ventilation products are <strong>Xpelair</strong> and <strong>Greenheck</strong>.</p>
-		    				</div>
+							<div class="col-xs-12 col-sm-6" v-html="getHTML(about.acLeftDesc)"></div>
+							<div class="col-xs-12 col-sm-6" v-html="getHTML(about.acRightDesc)"></div>
 		    			</div>
 	    			</div>
 	    		</div>
@@ -138,14 +131,11 @@
 			<h2>Health and Safety</h2>
 			<p>THE CCL HSE POLICY STATEMENT – Health, Safety and Environment</p>
 			<div class="row">
-    			<div class="col-xs-12 col-sm-6">
-    				<p><strong>Climate Control Limited</strong> is a provider of air conditioning systems that utilizes a variety of skills, procedures and activities. CCL recognizes its moral, social and legal responsibility to provide a safe, secure and healthy work environment for employees, clients, contractors, suppliers, customers and visitors. </p>
-					<p>CCL further recognizes that the development and implementation of an effective HSE policy is critical to the achievement to its corporate Vision and Mission. Executive management is committed to the pursuit of excellence in HSE programs.”</p>
-    			</div>
-    			<div class="col-xs-12 col-sm-6">
-    				<p>“Within our Company no activity shall be executed without addressing safety, health and the impact on the environment of the job. Management believes that accidents and injuries are preventable and our reputation and profitability depend upon our ability to manage our operations safely and with no impact on the health and well being of all who may be affectedby our commercial activities.”</p>
-    				<p class="stow-logo"><strong>CCL is STOW Certified</strong><img src="images/content-logo7.jpg" class="img-responsive" title="LG"></p>
-    			</div>
+				<div class="col-xs-12 col-sm-6" v-html="getHTML(about.healthLeftDesc)"></div>
+				<div class="col-xs-12 col-sm-6">
+					<p v-html="getHTML(about.healthRightDesc)"></p>
+					<p class="stow-logo"><strong>CCL is STOW Certified</strong><img src="images/content-logo7.jpg" class="img-responsive" title="LG"></p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -160,38 +150,24 @@
 	<div class="fixed-wrapper">
 		<div class="container-fluid">
 			<h2>Service Directory</h2>
-			<p>Climate Control Ltd. offers a large spectrum of commercial,<br/> industrial, and many more products. </p>
+			<p v-html="getHTML(about.serviceDirectoryHeading)"></p>
 			<div class="row">
     			<div class="col-xs-12 col-sm-4">
     				<ul>
     					<li>COMMERCIAL</li>
-						<li>Air Distribution and Balancing </li>
-						<li>Air Quality Deep Bed Scrubbers</li>
-						<li>Building Management and Energy Management Systems</li>
-						<li>Duct Fabrication and Installation</li>
-						<li>End User Training</li>
+						<li v-for="commerical in about.commerical" :key="commerical.item">{{commerical.item}}</li>
     				</ul>
     			</div>
     			<div class="col-xs-12 col-sm-4">
     				<ul>
     					<li>INDUSTRIAL</li>
-						<li>Engineering Services</li>
-						<li>Industrial and Explosion Proof Units</li>
-						<li>Parts</li>
-						<li>Project Management </li>
-						<li>Remote Site System Monitoring and Early Warning Systems </li>
+						<li v-for="industrial in about.industrial" :key="industrial.item">{{industrial.item}}</li>
     				</ul>
     			</div>
     			<div class="col-xs-12 col-sm-4">
     				<ul>
     					<li>OTHER
-						<li>Duct Cleaning</li>
-						<li>Indoor Air Quality Audits</li>
-						<li>Rentals</li>
-						<li>Routine Preventative Maintenance Contracts</li>
-						<li>System Design, Installation and Commissioning</li>
-						<li>Troubleshooting and Equipment Repair and Maintenance</li>
-						<li>Ventilation / Exhaust Fans</li>
+						<li v-for="other in about.other" :key="other.item">{{other.item}}</li>
     				</ul>
     			</div>
 			</div>
@@ -200,3 +176,18 @@
 </section>
 </div>	    
 </template>
+<script>
+export default {
+  data() {
+    var about = require("js-yaml-loader!~/content/about.yml");
+    return { about };
+  },
+  methods: {
+    getHTML: function(code) {
+      var showdown = require("showdown");
+      var converter = new showdown.Converter();
+      return converter.makeHtml(code);
+    }
+  }
+};
+</script>

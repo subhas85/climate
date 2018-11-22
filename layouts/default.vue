@@ -57,23 +57,22 @@
             <!--<li><a href="" title="">Recent Projects</a></li>-->
             <!--<li><a href="" title="">Rentals</a></li>-->
             <!--<li><a href="" title="">Engineering</a></li>-->
-            <!--<li><a href="" title="">Support Downloads</a></li>-->
-            <li><a href="about" title="">About Us</a></li>
-            <li><a href="careers" title="">Careers</a></li>
-            <li><a href="contact" title="" class="active">Contact Us</a></li>
+            <!--<li><a href="" title="" class="active">Support Downloads</a></li>-->
+            <li><a href="/about" title="">About Us</a></li>
+            <li><a href="/careers" title="">Careers</a></li>
+            <li><a href="/contact" title="">Contact Us</a></li>
             <!--<li><a href="faq" title="">FAQ</a></li>-->
           </ul>
         </div>
         <div class="col-xs-12 col-sm-7 col-md-8">
           <div class="menu-details">
-              <p><i class="fa fa-envelope"></i>&nbsp; sales@climatecontrol.com</p>
-              <h3>Head Office</h3>
-              <p><i class="fa fa-map-marker"></i>&nbsp; 124 Eastern Main Road, Laventille, Port of Spain, Trinidad</p>
-              <p><i class="fa fa-phone"></i>&nbsp; Office: 1-868-624-COOL (2665)</p>
-              <p><i class="fa fa-fax"></i>&nbsp; Fax: 1-868-625-8207</p>
-              <h3>Branch Office</h3>
-              <p><i class="fa fa-map-marker"></i> 44-46 Milford Road, Canaan, Tobago.</p>
-              <p><i class="fa fa-phone"></i>&nbsp; Office: 1-868-631-0392</p>
+              <div v-for="office in contact.offices" :key="office.map">
+                      <h3>{{office.title}}</h3>
+                      <p><i class="fa fa-map-marker"></i>&nbsp; {{office.address}}, {{office.address2}}</p>
+              <p><i class="fa fa-phone"></i>&nbsp; Office: {{office.office}}</p>
+              <p><i class="fa fa-fax"></i>&nbsp; Fax: {{office.fax}}</p>
+              </div>
+                    
           </div>
         </div>
       </div>
@@ -89,6 +88,7 @@
 				<i class="fa fa-arrow-up"></i>
 			</a>
 		</div>
+    <!--
 		<div class="row">
 			<div class="col-sm-12 col-md-6">
 				<div class="footer-menu">
@@ -146,9 +146,11 @@
 				</div>
 			</div>
 		</div>
+    -->
 
 		<div class="row">
 			<div class="col-sm-12 col-md-12 col-lg-9 footer-items">
+        <!--
 				<div class="comodo-seal">
 					<p>100%<br/> Secure<br/> Shopping</p>
 					<img src="/images/comodo-footer.png" alt="Comodo Secure" title="Comodo Secure">
@@ -158,11 +160,13 @@
 					<p>Accepted payment methods</p>
 					<img src="/images/footer-payment.png" alt="Accepted Payment Methods" title="Accepted Payment Methods">
 				</div>
+        -->
 
 				<div class="copyright">
-					<p>Copyright © Climate Control. All rights reserved.</p>
+					<p>Copyright © Climate Control Ltd. All rights reserved.</p>
 				</div>
 			</div>
+      
 			<div class="col-sm-12 col-md-3 visible-lg">
 				<div class="teaser-2">
 					<p>In Business since <b>1966</b></p>
@@ -184,4 +188,21 @@
 
 <style>
 </style>
+
+
+<script>
+export default {
+  data() {
+    var contact = require("js-yaml-loader!~/content/contact.yml");
+    return { contact };
+  },
+  methods: {
+    getHTML: function(code) {
+      var showdown = require("showdown");
+      var converter = new showdown.Converter();
+      return converter.makeHtml(code);
+    }
+  }
+};
+</script>
 

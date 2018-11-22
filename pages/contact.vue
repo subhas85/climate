@@ -14,10 +14,10 @@
 	    			<div class="row">
 		    			<div class="col-xs-12">
 		    				<p>EMAIL</p>
-							<p>climate@ccl-tt.com</p>
+							<p v-html="getHTML(contact.email)"></p>
 		    			</div>
 	    			</div>
-	    			<div class="row" v-for="office in offices" :key="office.map">
+	    			<div class="row" v-for="office in contact.offices" :key="office.map">
 		    			<div class="col-xs-12 col-sm-6">
 		    				<p>{{office.title}}</p>
 							<p>{{office.address}}</p>
@@ -35,7 +35,7 @@
 	    		<section class="direct-contact">
 	    			<h2>DIRECT CONTACT</h2>
 	    			<div class="row">
-		    			<div class="col-xs-12 col-sm-4" v-for="contact in contacts" :key="contact.name">
+		    			<div class="col-xs-12 col-sm-4" v-for="contact in contact.contacts" :key="contact.name">
 		    				<p>{{contact.name}}<br/>
 							{{contact.position}}<br/>
 							<span>{{contact.phone}}</span><br/>
@@ -54,18 +54,16 @@
 <script>
 export default {
   data() {
-    // Using webpacks context to gather all files from a folder
-    const context = require.context("~/content/offices/", false, /\.json$/);
-	const context2 = require.context("~/content/contacts/", false, /\.json$/);
-    const offices = context.keys().map(key => ({
-      ...context(key),
-      _path: `/blog/${key.replace(".json", "").replace("./", "")}`
-    }));
-	const contacts = context2.keys().map(key => ({
-      ...context2(key),
-      _path: `/blog/${key.replace(".json", "").replace("./", "")}`
-    }));
-    return { offices,contacts };
+    var contact = require("js-yaml-loader!~/content/contact.yml");
+    return { contact };
+  },
+  methods: {
+    getHTML: function(code) {
+      var showdown = require("showdown");
+      var converter = new showdown.Converter();
+      return converter.makeHtml(code);
+    }
   }
 };
 </script>
+
