@@ -14,10 +14,8 @@
 						<p v-html="getHTML(career.top)"></p>
 	    			
 	    			<div class="row">
-		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topLeft)">
-		    			</div>
-		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topRight)">
-		    			</div>
+		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topLeft)"></div>
+		    			<div class="col-xs-12 col-sm-6" v-html="getHTML(career.topRight)"></div>
 	    			</div>
 	    		</section>
 
