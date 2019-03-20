@@ -1,6 +1,6 @@
 top: >-
   **Climate Control** sells and services leading brands of air conditioning
-  equipment including LG VRF systems, York commercial & chill water systems,
+  equipment including LG VRF systems, Carrier commercial & chill water systems,
   Gree light commercial and residential equipment & Coldwave residential air
   conditioners.
 topLeftDesc: >-
@@ -19,7 +19,7 @@ topRightDesc: >-
   We are also a STOW Certified Company.
 acTop: >-
   **Climate Control** sells and services leading brands of air conditioning
-  equipment including LG VRF systems, York commercial & chill water systems,
+  equipment including LG VRF systems, Carrier commercial & chill water systems,
   Gree light commercial and residential equipment & Coldwave residential air
   conditioners.
 acLeftDesc: >-
@@ -67,8 +67,9 @@ healthRightDesc: >-
   depend upon our ability to manage our operations safely and with no impact on
   the health and well being of all who may be affectedby our commercial
   activities.”
-serviceDirectoryHeading: |-
-  Climate Control Ltd. offers a large spectrum of commercial, industrial, and many more products.
+serviceDirectoryHeading: >-
+  Climate Control Ltd. offers a large spectrum of commercial, industrial, and
+  many more products.
 commerical:
   - item: Air Distribution and Balancing
   - item: Air Quality Deep Bed Scrubbers
